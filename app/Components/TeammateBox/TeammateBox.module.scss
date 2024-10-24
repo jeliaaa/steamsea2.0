@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+
+    .image {
+        border-radius: 128px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+
+        .title {
+            color: var(--WhitePrimaryText, #FFF);
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.32px;
+        }
+
+        .role {
+            color: var(--SecondaryDarkModeTExtCollor, #898989);
+            text-align: center;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: -0.32px;
+        }
+    }
+}

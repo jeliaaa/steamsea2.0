@@ -1,0 +1,59 @@
+.aside {
+    display: flex;
+    position: fixed;  // Changed from relative to fixed
+    flex-direction: column;
+    width: 241px;
+    background-color: #151515;
+    height: 100vh;  // Ensure the aside covers the full height of the viewport
+    padding: 24px;
+    // top: 0;  // Stick it to the top of the viewport
+    left: 0;  // Stick it to the left side
+    z-index: 100;  // Ensure it's on top of other content
+  }
+  
+  .siderContent {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .menuItems {  
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .lightDarkContainer {
+    margin-top: auto; // Pushes LightDark to the bottom
+  }
+  
+  .darkAside {
+    background-color: #151515;
+  }
+  
+  @media (max-width: 768px) {
+    .aside {
+      display: flex;
+      flex-direction: row;
+      top: unset;
+      bottom: 0;
+      height: 82px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .lightDarkContainer {
+      display: none;
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    .menuItems {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  

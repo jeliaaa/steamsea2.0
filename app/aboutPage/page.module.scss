@@ -1,0 +1,42 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 40px;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between
+}
+
+.projectInfo {
+  width: 655px;
+  color: #fff;
+  font-family: "Palanquin Dark";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; 
+  letter-spacing: -0.72px;
+}
+
+@media (max-width: 940px) {
+
+    .project{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .projectInfo{
+        font-size: 20px;
+        width: 400px;
+    }
+    
+}
+@media (max-width: 1360px) {
+
+    .projectInfo{
+        font-size: 24px;
+    }
+    
+}

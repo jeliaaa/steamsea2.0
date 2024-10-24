@@ -1,0 +1,105 @@
+@import "../colors/Colors.scss";
+
+.wrapper {
+  display: flex;
+  max-width: 1279px;
+  overflow-x: scroll;
+  flex-direction: column;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapperContent {
+  display: flex;
+  padding: 16px 32px;
+  width: 100%;
+  gap: 16px;
+  flex-direction: column;
+  max-width: 1279px;
+  overflow-x: scroll;
+}
+
+.title {
+  display: flex;
+  padding: 0 0 20px 0;
+  color: #FFFFFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.wrapperContent::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  display: flex;
+  gap: 24px;
+  width: 1050px;
+  overflow-y: hidden;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.darkWrapperContainer {
+  display: flex;
+  padding: 16px 32px;
+  width: 100%;
+  gap: 16px;
+  flex-direction: column;
+  max-width: 1279px;
+  overflow-x: scroll;
+}
+
+.darkWrapper .title {
+  color: #fff;
+}
+
+/* For screens smaller than 1050px */
+@media (max-width: 1050px) {
+  .wrapper {
+    max-width: 300px;
+    
+  }
+  .title {
+    position: relative;
+  }
+}
+
+/* For mobile screens - flex-wrap applied */
+@media (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;  // Allows wrapping
+    gap: 16px;
+    width: 100%;
+    overflow-x: hidden;
+    justify-content: center;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1650px) {
+  .wrapper {
+    max-width: 878px;
+    padding: 42px 0 0 32px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 1350px) {
+  .wrapper {
+    max-width: 400px;
+  }
+  .title {
+    position: relative;
+  }
+}
