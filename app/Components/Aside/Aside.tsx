@@ -15,8 +15,6 @@ const AsideMenu = () => {
       setActiveItem('home');
     } else if (pathname.includes('/aboutPage')) {
       setActiveItem('about');
-    } else if (pathname.includes('/technologyPage')) {
-      setActiveItem('technology');
     }
   }, [pathname]);  
 
@@ -41,11 +39,6 @@ const AsideMenu = () => {
             name={"about"}
             isActive={activeItem === "about"}
             onClick={() => handleMenuItemClick("about", "/aboutPage")}
-          />
-          <MenuItem
-            name={"technology"}
-            isActive={activeItem === "technology"}
-            onClick={() => handleMenuItemClick("technology", "/technologyPage")}
           />
         </div>
       </div>

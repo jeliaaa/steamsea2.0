@@ -19,16 +19,16 @@
 .menuText {
   margin-left: 10px;
   transition: color 0.3s;
-  color: #8F93A3;
+  color: #8f93a3;
 }
 
 .active {
   border-radius: 16px;
-  background: #2C1C1C;
+  background: #c6dfbf21;
 }
 
 .active .menuText {
-  color: #FF5F5F;
+  color: #5ea267;
 }
 
 .icon {
@@ -36,7 +36,7 @@
 }
 
 .iconActive {
-  color: #FF5F5F;
+  color: #5ea267;
 }
 
 .darkMenuItem .menuText {
