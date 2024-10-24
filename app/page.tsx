@@ -26,8 +26,8 @@ export default function Home() {
         <div className={styles.bannerWrapper}>
           {
             screenWidth > 768 ?
-              <Image src={"/mainBannerr.svg"} alt={"main banner"} width={200} height={200} className={styles.banner} /> :
-              <Image src={"modileBanner.svg"} alt={"mobile banner"} width={200} height={0} className={styles.banner} />
+              <Image src={"/mtavari.webp"} alt={"main banner"} width={1200} height={600} className={styles.banner} /> :
+              <Image src={"/mtavari.webp"} alt={"mobile banner"} width={200} height={0} className={styles.banner} />
           }
         </div>
         <div className={styles.description}>

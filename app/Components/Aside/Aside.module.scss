@@ -3,12 +3,13 @@
     position: fixed;  // Changed from relative to fixed
     flex-direction: column;
     width: 241px;
-    background-color: #151515;
+    background-color: #394cf8;
     height: 100vh;  // Ensure the aside covers the full height of the viewport
     padding: 24px;
     // top: 0;  // Stick it to the top of the viewport
     left: 0;  // Stick it to the left side
     z-index: 100;  // Ensure it's on top of other content
+    border-right: 1px solid green;
   }
   
   .siderContent {
@@ -28,7 +29,14 @@
   }
   
   .darkAside {
-    background-color: #151515;
+    background-color: #394cf8;
+  }
+  .logo{
+    p{
+      color: #2bff00;
+      font-weight: bolder;
+      font-size: xx-large;
+    }
   }
   
   @media (max-width: 768px) {

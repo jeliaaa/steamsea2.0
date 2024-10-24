@@ -10,34 +10,22 @@ export default function Home() {
   const teammateCards = [
     <TeammateBox
       key="1"
-      name="ანრი დუმბაძე"
-      image="/anri.png"
-      role="UI/UX & Front End"
+      name="რატი დუმბაძე"
+      image="/rati.jpg"
+      role="Front End"
     />,
     <TeammateBox
       key="2"
-      name="რაინდი მგელაძე"
-      image="/knight.png"
-      role="Backend Developer"
+      name="ალექსანდრე ჯელია"
+      image="/aleks.jpg"
+      role="Backend Developer / Electric Engineer"
     />,
     <TeammateBox
       key="3"
-      name="მართა თოდუა"
-      image="/marta.png"
-      role="პროგრესელი"
-    />,
-    <TeammateBox
-      key="4"
-      name="გიორგი გობაძე"
-      image="/gio.png"
-      role="კაი ბიჭი"
-    />,
-    <TeammateBox
-      key="5"
-      name="ელისაბედ გეგეშიძე"
-      image="/gogo.png"
-      role="აზრზე არ ვარ ვინაა"
-    />,
+      name="ნიკა აბულაძე"
+      image="/nikka.jpg"
+      role="Mechanical Engineer"
+    />
   ];
 
   return (
@@ -45,17 +33,7 @@ export default function Home() {
       <Aside />
       <div className={styles.content}>
         <MusicWrapper cards={teammateCards} name="Our Team" />
-        <div className={styles.info}>
-          <Icon name={"FAZER"} width="180px" />
-        </div>
         <div className={styles.project}>
-          <Image
-            src={"/knight.png"}
-            alt={"main banner"}
-            width={410}
-            height={340}
-            className={styles.banner}
-          />
           <p className={styles.projectInfo}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga atque illo numquam id ratione minus accusantium distinctio libero, autem quos delectus ipsa molestiae dignissimos beatae? Placeat dolor vero repudiandae necessitatibus.</p>
           
         </div>

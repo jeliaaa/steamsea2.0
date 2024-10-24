@@ -27,7 +27,8 @@ const AsideMenu = () => {
     <div className={styles.aside}>
       <div className={styles.siderContent}>
         <div className={styles.logo}>
-          <Icon width='124px' name={"FAZER"} isActive={false} onClick={() => { }} />
+          {/* <Icon width='124px' name={"FAZER"} isActive={false} onClick={() => { }} /> */}
+          <p>StarFish Systems</p>
         </div>
         <div className={styles.menuItems}>
           <MenuItem
