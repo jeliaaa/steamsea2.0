@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         {/* Video Section */}
-        
+
 
         <div className={styles.description}>
           <div className={styles.issue}>
@@ -44,14 +44,15 @@ export default function Home() {
             <p className={styles.text}>ამ პრობლემას ჩვენი ავტონომური გემი აგვარებს, რომელიც ნაგავს აგროვებს. დრონის საშუალებით იგი ახდენს ტბაში ნაგვის დეტექციას და აწოდებს ინფორმაციას ნავს, ნავი კი ავტოპილოტის საშუალებით მიდის ამ ადგილას და აგროვებს ნარჩენებს.</p>
           </div>
         </div>
-      </div>
-
-      <div className={styles.videoWrapper}>
+        <div className={styles.videoWrapper}>
           <video width="80%" controls>
             <source src="/videoo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
+      </div>
+
+
     </div>
   );
 }
