@@ -7,6 +7,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
   }
   .content {
     width: 100%;
@@ -38,7 +39,6 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 20px;
-      margin-bottom: 100px;
 
       .issue {
         width: 100%;
