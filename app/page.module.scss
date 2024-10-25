@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  .videoWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .content {
     width: 100%;
     display: flex;

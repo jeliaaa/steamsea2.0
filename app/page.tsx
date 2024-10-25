@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Image from "next/image";
 import styles from "./page.module.scss";
@@ -18,7 +18,7 @@ export default function Home() {
     return () => {
       if (typeof window !== 'undefined') window.removeEventListener('resize', handleResize);
     };
-  }, [window]);
+  }, []);
 
   return (
     <div className={styles.page}>
@@ -26,22 +26,32 @@ export default function Home() {
         <div className={styles.bannerWrapper}>
           {
             screenWidth > 768 ?
-              <Image src={"/mtavari.webp"} alt={"main banner"} width={1200} height={600} className={styles.banner} /> :
-              <Image src={"/mtavari.webp"} alt={"mobile banner"} width={200} height={0} className={styles.banner} />
+              <Image src={"/ratiiii.png"} alt={"main banner"} width={1000} height={300} className={styles.banner} /> :
+              <Image src={"/ratiiii.png"} alt={"mobile banner"} width={200} height={0} className={styles.banner} />
           }
         </div>
+
+        {/* Video Section */}
+        
+
         <div className={styles.description}>
           <div className={styles.issue}>
             <h2 className={styles.title}>რა არის პრობლემა?</h2>
-            <p className={styles.text}>არალეგალური თევზაობა გვერდს უვლის კანონებს და ნორმებს რაც სახელმწიფო ორგანოებს საშუალებას არ აძლევს აკონტროლონ და დაიცვან თევზის რესურსები შედეგად საფრთხე ექმნება მსოფლიო თევზჭერის მდგრადობას და საკვების მიწოდებას და ნადგურდება ზღვის ეკოსისტემა</p>
+            <p className={styles.text}>პლასტმასის დაბინძურება საკმაოდ სერიოზულ პრონბლემას წარმოადგენს წყლის მასებისთვის, მსოფლიო ეკონომიკას ამასთან ბრძოლა დაახლოებით $13 მილიარდი უჯდებათ, აქედან გამომდინარე, ეს პრობლემა თანაბრად სადარდებელია ეკოაქტივისტებისთვისაც და ბიზნესმენებისთვისაც. </p>
           </div>
           <div className={styles.issue}>
             <h2 className={styles.title}>როგორ ვაგვარებთ?</h2>
-            <p className={styles.text}>NetWatch მიზნად ისახავს უკანონო თევზჭერის შეჩერებას და ოკეანეების დაცვას. სისტემა აღჭურვილია სენსორებით, რაც უზრუნველყოფს სწრაფ და ეფექტურ რეაგირებას უკანონო მეთოდებზე. ჩვენი მისიაა, წყლის ბინადრები უსაფრთხოდ იყვნენ და ოკეანეებიც დაცული იყოს მომავალი თაობებისთვის.</p>
+            <p className={styles.text}>ამ პრობლემას ჩვენი ავტონომური გემი აგვარებს, რომელიც ნაგავს აგროვებს. დრონის საშუალებით იგი ახდენს ტბაში ნაგვის დეტექციას და აწოდებს ინფორმაციას ნავს, ნავი კი ავტოპილოტის საშუალებით მიდის ამ ადგილას და აგროვებს ნარჩენებს.</p>
           </div>
         </div>
       </div>
-    </div>
 
+      <div className={styles.videoWrapper}>
+          <video width="80%" controls>
+            <source src="/videoo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+    </div>
   );
 }

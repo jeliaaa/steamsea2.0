@@ -32,11 +32,11 @@ export default function Home() {
     <div className={styles.page}>
       <Aside />
       <div className={styles.content}>
-        <MusicWrapper cards={teammateCards} name="Our Team" />
-        <div className={styles.project}>
+        <MusicWrapper cards={teammateCards} name="ჩვენი გუნდი" />
+        {/* <div className={styles.project}>
           <p className={styles.projectInfo}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga atque illo numquam id ratione minus accusantium distinctio libero, autem quos delectus ipsa molestiae dignissimos beatae? Placeat dolor vero repudiandae necessitatibus.</p>
           
-        </div>
+        </div> */}
       </div>
     </div>
   );
